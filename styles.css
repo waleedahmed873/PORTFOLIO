@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(246, 245, 245);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 17vh;
+}
+
+.nav-links {
+  display: flex;
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* HAMBURGER STYLING */
+.menu-links li a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+#main-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.section {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.section .profile-img img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  /* clip-path: circle(); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.main-page p {
+  font-weight: 600;
+  text-align: center;
+  color: rgb(85, 85, 85);
+  margin-bottom: 0.5rem;
+}
+
+.main-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-page span {
+  display: block;
+  width: 5px;
+  height: 41px;
+  background-color: rgb(255, 222, 6);
+  margin-bottom: 3px;
+}
+
+.skill {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: rgb(85, 85, 85);
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn-one {
+  background: none;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+.btn-one:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-two {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 2rem;
+}
+
+.btn-two:hover {
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: black;
+  color: white;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.icon img {
+  width: 35px;
+}
+
+/* ABOUT ME STYLING */
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+.about-container{
+    width: 1500px;
+    margin: auto;
+    padding: 150px 0px;
+}
+.about-text p {
+    
+  text-align: center;
+  color: rgb(85, 85, 85);
+  margin: 0%;
+  padding-bottom: 0.5rem;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+.icon{
+  height: 2rem;
+  cursor: pointer;
+}
+.about-section{
+  padding: 100px 0px;
+}
+.about-section p{
+font-weight: 400;
+font-size: 20px;
+}
+.about-section span{
+  margin-left: 60px;
+}
+.experience{
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.education{
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* EXPERIENCE SECTION  */
+
+.web-skills{
+  padding: 100px 0px;
+}
+.html,.css,.javascript,.bootstrap,.mongodb,.expressjs,.nodejs,.reactjs,.nextjs,.git,.vscode{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  gap: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.html,.css,.javascript,.bootstrap,.mongodb,.expressjs,.nodejs,.reactjs,.nextjs,.git,.vscode p{
+  font-size: 12px;
+}
+.logo-and-text{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.logo-and-text h4{
+  margin: 0;
+}
+.logo-and-text img{
+  height: 23px;
+}
+/* PROJECT SECTION */
+.cards{
+  padding: 90px 0px;
+  display: flex;
+  gap: 20px;
+}
+.project-card{
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(239, 239, 239);
+  border:  rgb(163, 163, 163) 0.1rem solid;
+  gap: 10px;
+  padding: 40px 30px;
+  width: 30%;
+}
+.project-card h2{
+  margin-top: 15px;
+}
+.project-image{
+    border-radius: 2rem;
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+}
+.button-container{
+  display: flex;
+  gap: 15px;
+}
+.project-btn{
+  border: 1px solid rgb(163, 163, 163);
+  outline: none;
+  border-radius: 30px;
+  padding: 20px 30px;
+  color: black;
+  font-weight: 500;
+  transition: 0.3s all;
+}
+.project-btn:hover{
+  background-color: #353535;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+}
+/* CONTACT SECTION */
+.info-container{
+  border: rgb(53, 53, 53) 0.1rem solid;
+display: flex;
+margin: 2rem auto;
+padding: 0.5rem;
+border-radius: 2rem;
+}
+.email{
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem;
+}
+.email img{
+  height: 40px;
+}
+.gmail{
+  color: black;
+  text-decoration: none;
+}
+.gmail:hover{
+  color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.linkdin-con{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  gap: 10px;
+  margin: 1rem;
+}
+.linkdin-con img{
+  height: 34px;
+}
+.linkdin-con a{
+  color: black;
+  text-decoration: none;
+}
+.linkdin-con a:hover{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+footer p{
+  text-align: center;
+  color: rgb(85, 85, 85);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

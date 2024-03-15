@@ -1,0 +1,43 @@
+@media screen and (max-width: 1200px) {
+    #main-navbar{
+        display: none;
+        flex: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .col-lg-6 img {
+        max-width: 100%; 
+        margin: 0 auto; 
+        width: 300px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+    .section{
+        margin-top: 5rem;
+    }
+    .icon img{
+        width: 35px;
+    }
+    /* ABOUT SECTION STYLING */
+    
+}
+

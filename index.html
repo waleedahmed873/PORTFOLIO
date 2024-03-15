@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="main-navbar">
+        <nav id="main-nav" class=" navbar d-flex justify-content-around align-content-center">
+            <div class="logo" style="font-size: 2rem;">Waleed Ahmed</div>
+            <div class="nav-links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </nav>
+    </div>
+    <nav id="hamburger-nav" class="navbar justify-content-around align-content-center">
+        <div class="logo" style="font-size: 2rem;">Waleed Ahmed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#Projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="profile" class="container section d-flex gap-5  align-content-center justify-content-center">
+        <div class="row ">
+            <div class="col-lg-6 profile-img">
+                <img  
+                src="./assets/Picsart_23-11-27_15-47-51-854.jpg" alt="">
+            </div>
+
+
+            <div class="col-lg-6 px-5 d-flex flex-column align-content-center justify-content-center main-page">
+                <p>Hello, I'am </p>
+                <h1> <span></span>Waleed <span></span></h1>
+                <p class="skill">Full Stack Developer</p>
+                <div class="btn-container">
+                    <a target="_blank" href="https://drive.google.com/file/d/1hY5_u09vkX9Al5PAQhojhqt80mGWNxrw/view?usp=sharing">
+                        <button class="btn-one">Download CV</button>
+                    </a>
+                    <button class="btn-two">Contact Info</button>
+                </div>
+                <div class="social-container">
+                    <div class="icon">
+                        <a target="_blank" href="https://github.com/waleedahmed873">
+                            <img src="./assets/github.png" alt="">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://www.linkedin.com/in/waleed-ahmed-9b014a283/">
+                            <img src="./assets/linkedin.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        
+        
+        </div>
+    </div>
+    
+    <div id="about" class="container about-container">
+        <div class="about-text">
+            <p>Get To Know More</p>
+            <h1>About Me</h1>
+        </div>
+        
+
+        <div class="row about-section d-flex align-content-center justify-content-center gap-5">
+            
+                <div class="experience col-lg-4">
+                    <img class="icon" src="./assets/experience.png" alt="">
+                    <h1>Experience</h1>
+                    <p> <span></span>1 Year + <br>Frontend Experience 
+                    </p>
+                </div>
+                
+                <div class="education col-lg-4">
+                    <img class="icon" src="./assets/education.png" alt="">
+                    <h1>Education</h1>
+                    <p>
+                        BS:BBIT (ongoing) 
+                    </p>
+                </div>
+                
+                <div class="about-text">
+                    <p>Enthusiastic and aspiring Web Designer and Developer with a solid foundation in HTML,
+                        CSS, and JavaScript, along with familiarity in React, Node.js, MongoDB,
+                        Express.js, and Next.js. Currently pursuing a Bachelor's degree in
+                        Business and Information Technology from Virtual University, driven by a
+                        passion for technology and a keen desire to evolve into a proficient fullstack developer. 
+                        Fluent in both English and Urdu, possessing excellent
+                        communication skills to effectively collaborate and contribute to team
+                        projects.</p>
+                </div>
+            
+        </div>
+
+
+    </div>
+
+    <div id="skills" class=" pt-5 container">
+        <div class="about-text">
+            <p>Explore My</p>
+            <h1>Web Skills</h1>
+        </div>
+        
+        <div class="row d-flex gap-4 justify-content-center web-skills">
+            
+            <div class="col-lg-3 html">
+                <div class="logo-and-text">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png" alt="">
+                    <h4>HTML</h4>
+                </div>
+                <p>Experienced</p>
+            </div>
+           
+            <div class="col-lg-3 css">
+                <div class="logo-and-text">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-256.png" alt="">
+                    <h4>CSS</h4>
+                </div>
+                <p>Experienced</p>
+            </div>
+            
+            <div class="col-lg-3 javascript">
+                <div class="logo-and-text">
+                    <img src="https://iconape.com/wp-content/files/ez/353342/png/javascript-logo.png" alt="">
+                    <h4>JavaScript</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+            <div class="col-lg-3 bootstrap">
+                <div class="logo-and-text">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="">
+                    <h4>BootStrap</h4>
+                </div>
+                <p>Experienced</p>
+            </div>
+            
+            <div class="col-lg-3 mongodb">
+                <div class="logo-and-text">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="">
+                    <h4>MongoDB</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+            
+            <div class="col-lg-3 expressjs">
+                <div class="logo-and-text">
+                    <img style="background-color: white; border-radius: 50%;" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="">
+                    <h4>ExpressJs</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+
+            <div class="col-lg-3 reactjs">
+                <div class="logo-and-text">
+                    <img src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-256.png" alt="">
+                    <h4>ReactJs</h4>
+                </div>
+                <p>Experienced</p>
+            </div>
+
+            <div class="col-lg-3 nodejs">
+                <div class="logo-and-text">
+                    <img style=" border-radius: 50%;" src="data:image/jpeg;base64,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" alt="">
+                    <h4>NodeJs</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+            <div class="col-lg-3 nextjs">
+                <div class="logo-and-text">
+                    <img style="background-color: white; width: 25px; height: 25px; border-radius: 50%;" src="https://cdn3.iconfinder.com/data/icons/teenyicons-solid-vol-2/15/nextjs-256.png" alt="">
+                    <h4>NextJs</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+
+            <div class="col-lg-3 git">
+                <div class="logo-and-text">
+                    <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-256.png" alt="">
+                    <h4>Git</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+            <div class="col-lg-3 vscode">
+                <div class="logo-and-text">
+                    <img style="border-radius: 50%;height: 23px; width: 23px; " src="https://logowik.com/content/uploads/images/visual-studio-code7642.jpg" alt="">
+                    <h4>VS Code</h4>
+                </div>
+                <p>Intermediate</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="projects" class=" container project-section pt-5">
+        <div class="about-text">
+            <p>Browse My</p>
+            <h1>Projects</h1>
+        </div>
+
+
+        <div class="row cards">
+            
+            <div class="col-lg-3 project-card d-flex flex-column">
+                <img class="project-image" src="./assets/project1.PNG" alt="">
+                <h2>Project One</h2>
+                <div class="button-container">
+                    <a target="_blank" href="https://github.com/waleedahmed873/Gb-bootsratp-frontend.git">
+                    <button class="project-btn">
+                        Github
+                      </button>
+                    </a>
+                    
+                    <a target="_blank" href="https://gb-bootsratp.vercel.app/">
+                    <button class="project-btn">
+                        Live Demo
+                      </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 project-card d-flex flex-column">
+                <img class="project-image" src="./assets/project2.PNG" alt="">
+                <h2>Project Two</h2>
+                <div class="button-container">
+                    <a target="_blank" href="https://github.com/waleedahmed873/snapchat-frontpage.git">
+                    <button class="project-btn">
+                        Github
+                      </button>
+                    </a>
+                    
+                    <a target="_blank" href="https://snapchat-frontpage.vercel.app/">
+                    <button class="project-btn">
+                        Live Demo
+                      </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 project-card d-flex flex-column">
+                <img class="project-image" src="./assets/project-1.PNG" alt="">
+                <h2>Project One</h2>
+                <div class="button-container">
+                    <a target="_blank" href="#">
+                    <button class="project-btn">
+                        Github
+                      </button>
+                    </a>
+                    
+                    <a target="_blank" href="#">
+                    <button class="project-btn">
+                        Live Demo
+                      </button>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+
+    <div id="contact" class="contact-section d-flex flex-column container">
+        <div class="about-text">
+            <p>Get In Touch</p>
+            <h1>Contact Me</h1>
+        </div>
+        
+
+        <div class="info-container">
+            <div class="email">
+                <img src="./assets/email.png" alt="">
+
+                <a class="gmail" href="mailto:mrwaleed873@gmail.com">
+                    mrwaleed873@gmail.com
+                </a>
+            </div>
+            
+            <div class="linkdin-con">
+                <img src="./assets/linkedin.png" alt="">
+
+                <a target="_blank" href="https://www.linkedin.com/in/waleed-ahmed-9b014a283/">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="container my-4">
+
+    <footer>
+        <p>Copyright © 2024 Waleed Ahmed. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
